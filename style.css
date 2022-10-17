@@ -1,0 +1,477 @@
+body{
+    background-image: url(./loke사진.png);
+}
+
+
+
+.container{
+    margin-top: 0.25rem;
+    padding-top: 5px;
+    color: white;
+    background-image: url(./loke사진.png);
+    background-repeat: none;
+    background-position: center;
+    height: 100vh;
+    border-radius: 2rem;
+    border: 3px ridge black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 5rem;
+}
+
+
+.container .input-box{
+    text-align: center;
+    position: relative;
+}
+
+
+.container label{
+    position: absolute;
+    left: 380px;
+    top:4px;
+    color: rgb(255, 255, 255);
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.container #user-input{
+    width: 40%;
+    position: relative;
+}
+
+.container #user-input:focus + label{
+    top:-26px;
+    color: white;
+}
+
+
+.container #list-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.container #list-menu div{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding:5px 15px 5px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.container #list-menu div:hover{
+    background-color: #dd6571;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 2px;
+
+
+}
+
+.container .to-do-list{
+    margin-top: 15px;
+}
+.container .to-do-list .text-box{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    border-bottom: 1px dashed black;
+    align-items: center;
+}
+
+.container .to-do-list .text-box .text{
+    text-align: center;
+}
+
+.on-line::before{
+    content: "Complete!";
+    background-color: #ff9d1b;
+    border-radius: 1rem;
+    color:black;
+}
+
+.check{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.check:hover{
+    background-color: #e99222;
+    color:white;
+}
+
+.return{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.return:hover{
+    background-color:#e99222;
+    color:#fcfcfc;
+    
+}
+
+
+.del{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.del:hover{
+    background-color:#d1404e;
+    color:white;
+    
+}
+
+
+/** ------------------------------------------------------------------/
+/------------------------미디어 쿼리---------------------------------/
+/-----------------------------------------------------------------*/
+@media screen and (min-width: 1196px)and (max-width:1390px){
+    .container label{
+        left: 330px;
+        top:4px;
+    }
+}
+
+@media screen and (min-width: 990px)and (max-width:1195px){
+    .container label{
+        left: 270px;
+        top:4px;
+    }
+}
+
+
+@media screen and (max-width:990px){
+    .container label{
+        left: 200px;
+        top:4px;
+    }
+    .container h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:769px){
+    .container label{
+        left: 152px;
+        top:3px;
+    }
+}
+
+@media screen and (max-width:549px){
+    .container label{
+        left: 128px;
+        top:3px;
+        font-size: 15px;
+    }
+    .container h1{
+        font-size:3rem;
+    }
+}
+
+@media screen and (max-width:476px){
+    .container label{
+        left: 110px;
+        top:3px;
+    }
+}
+@media screen and (max-width:472px){
+    .container label{
+        left: 108px;
+        top:3px;
+        font-size: 15px;
+    }
+    .container h1{
+        font-size:2.5rem;
+    }
+}
+@media screen and (max-width:442px){
+    .container label{
+        left: 100px;
+        top:4px;
+         font-size: 12px;
+    }
+}
+
+@media screen and (max-width:423px){
+    .container label{
+        left: 100px;
+        top:4px;
+        font-size: 12px;
+        
+    }
+    .container h1{
+        font-size:2rem;
+    }
+}
+
+
+@media screen and (max-width:371px){
+    .container label{
+        left: 80px;
+        top:5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:312px){
+    .container label{
+        left: 60px;
+        top:5px;
+        font-size: 12px;
+    }
+}body{
+    background-image: url(./loke사진.png);
+}
+
+
+
+.container{
+    margin-top: 0.25rem;
+    padding-top: 5px;
+    color: white;
+    background-image: url(./loke사진.png);
+    background-repeat: none;
+    background-position: center;
+    height: 100vh;
+    border-radius: 2rem;
+    border: 3px ridge black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 5rem;
+}
+
+
+.container .input-box{
+    text-align: center;
+    position: relative;
+}
+
+
+.container label{
+    position: absolute;
+    left: 380px;
+    top:4px;
+    color: rgb(255, 255, 255);
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.container #user-input{
+    width: 40%;
+    position: relative;
+}
+
+.container #user-input:focus + label{
+    top:-26px;
+    color: white;
+}
+
+
+.container #list-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.container #list-menu div{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding:5px 15px 5px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.container #list-menu div:hover{
+    background-color: #dd6571;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 2px;
+
+
+}
+
+.container .to-do-list{
+    margin-top: 15px;
+}
+.container .to-do-list .text-box{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    border-bottom: 1px dashed black;
+    align-items: center;
+}
+
+.container .to-do-list .text-box .text{
+    text-align: center;
+}
+
+.on-line::before{
+    content: "Complete!";
+    background-color: #ff9d1b;
+    border-radius: 1rem;
+    color:black;
+}
+
+.check{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.check:hover{
+    background-color: #e99222;
+    color:white;
+}
+
+.return{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.return:hover{
+    background-color:#e99222;
+    color:#fcfcfc;
+    
+}
+
+
+.del{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.del:hover{
+    background-color:#d1404e;
+    color:white;
+    
+}
+
+
+/** ------------------------------------------------------------------/
+/------------------------미디어 쿼리---------------------------------/
+/-----------------------------------------------------------------*/
+@media screen and (min-width: 1196px)and (max-width:1390px){
+    .container label{
+        left: 330px;
+        top:4px;
+    }
+}
+
+@media screen and (min-width: 990px)and (max-width:1195px){
+    .container label{
+        left: 270px;
+        top:4px;
+    }
+}
+
+
+@media screen and (max-width:990px){
+    .container label{
+        left: 200px;
+        top:4px;
+    }
+    .container h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:769px){
+    .container label{
+        left: 152px;
+        top:3px;
+    }
+}
+
+@media screen and (max-width:549px){
+    .container label{
+        left: 128px;
+        top:3px;
+        font-size: 15px;
+    }
+    .container h1{
+        font-size:3rem;
+    }
+}
+
+@media screen and (max-width:476px){
+    .container label{
+        left: 110px;
+        top:3px;
+    }
+}
+@media screen and (max-width:472px){
+    .container label{
+        left: 108px;
+        top:3px;
+        font-size: 15px;
+    }
+    .container h1{
+        font-size:2.5rem;
+    }
+}
+@media screen and (max-width:442px){
+    .container label{
+        left: 100px;
+        top:4px;
+         font-size: 12px;
+    }
+}
+
+@media screen and (max-width:423px){
+    .container label{
+        left: 100px;
+        top:4px;
+        font-size: 12px;
+        
+    }
+    .container h1{
+        font-size:2rem;
+    }
+}
+
+
+@media screen and (max-width:371px){
+    .container label{
+        left: 80px;
+        top:5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:312px){
+    .container label{
+        left: 60px;
+        top:5px;
+        font-size: 12px;
+    }
+}
