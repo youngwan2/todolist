@@ -1,4 +1,4 @@
-# todolist
+# todolist(미완성)
 
 ▶ 기능
 - 리스트 추가 기능
