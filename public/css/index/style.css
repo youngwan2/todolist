@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* 전체 프레임(제일 바깥 외곽) */
+#container {
+  background-image: url("/public//background/loke.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  border: 1px dashed black;
+}
+
+/* 내부 프레임(실질적인 프레임 내부 외곽 담당) */
+#container_inner {
+  background-image: url("/public//background/loke.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  min-width: 500px;
+  height: 100vh;
+  box-shadow: 0 5px 15px black;
+}
+
+/* 할일목록 제목 */
+#container #title {
+  text-align: center;
+  font-size: 4rem;
+  border-radius: 10px;
+
+}
+
+/* 유저 input 영역 */
+#container #input_area {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+}
+
+#user_input{
+  border: none;
+  color: white;
+  font-size: 18px;
+  background-image: url('/public/background/loke.png');
+  background-position: center;
+  width: 300px;
+  text-align: center;
+  background-size: cover;
+}
+
+#user_input::placeholder{
+  color:white;
+  font-size: 16px;
+  padding-left: 1rem;
+}
+
+#container #input_area #add_btn {
+  cursor: pointer;
+  width: 40px;
+  background-color: white;
+  border: none;
+}
+
+#container #input_area #add_btn:hover{
+  background-color: rgba(186, 9, 74, 0.667);
+  color:white;
+}
+
+/* 리스트 Taps 영역 */
+
+#container .taps {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 15px 15px rgb(2, 1, 1);
+}
+
+#container .taps > button {
+  background-image: url("/public/background/loke.png");
+  background-size: contain;
+  color: rgb(255, 246, 246);
+  font-weight: 500;
+  transition: 0.9s;
+  width: 60px;
+  height: 60px;
+  font-size: 17px;
+  margin: 5px;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 1px 15px rgb(242, 237, 237);
+}
+
+#container .taps > button:hover {
+  background-image: url("/public/background/loke.png");
+  background-size: cover;
+  background-position: center;
+  text-decoration: double;
+  cursor: pointer;
+  color: yellow;
+  box-shadow: 0 5px 10px 2px rgb(245, 219, 88);
+}
+
+/* 리스트 내용 영역 */
+#container #content_container {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50px;
+}
+
+#container #content_container .content_area {
+  color: white;
+  border-bottom: 1px dashed ;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 리스트 아이템 식별번호 영역 */
+#container #content_container .content_area .item_id {
+  margin-left: 1rem;
+}
+
+/* 리스트 완료 및 삭제 버튼 영역 */
+#container #content_container .content_area .item_btn {
+  margin-right: 1rem;
+}
+
+#container #content_container .content_area .item_btn button {
+  transition: 0.5s;
+  padding: 5px;
+  border: none;
+}
+
+#container #content_container .content_area .item_btn button:hover {
+  cursor: pointer;
+  background-color: burlywood;
+}
+
+/* complete 가 true 라면 해당 리스트에 줄긋는 효과 적용 */
+
+.content_area.complete {
+  border-bottom: black;
+  background-image: url('/public/background/bac.png');
+  background-position: center;
+}
+
+.complete::before{
+  content: "Complete";
+  font-weight: 500; font-size: 20px;
+  margin-left: 1rem;
+  background-image: url('/public/background/bac.png');
+  background-size: contain;
+  padding: 7px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+}
+

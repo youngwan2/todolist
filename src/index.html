@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/index/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>오늘의 할 일!</title>
+  </head>
+  <body>
+    <section id="container">
+      
+      <div id="container_inner">
+        <h1 id="title">To do List!</h1>
+        <article id="input_area">
+          <input 
+            placeholder="오늘 계획이 어떻게 되세요?"
+            type="text" 
+            id="user_input" 
+            required 
+            maxlength="10" />
+          <button id="add_btn">✎</button>
+        </article>
+        <div class="taps">
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        
+        <div id="content_container">
+          <section class="content_area">
+            <p class="item_id">No</p>
+            <p class="item_content">내용</p>
+            <p class="item_date">작성일자</p>
+            <div 
+              class="item_btn">
+              <p 
+                style="width:90px"
+                class="etc">완료/삭제</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
