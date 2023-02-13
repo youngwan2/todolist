@@ -12,7 +12,7 @@
 https://user-images.githubusercontent.com/107159871/197329688-51e61751-08e9-4066-9d5c-d940b9e05b5c.mp4
 
 
-<p> 리뉴얼 후 </p>
+<p> 리뉴얼 후(23/02/13 오후 6:48 기준) </p>
 
 ![image](https://user-images.githubusercontent.com/107159871/218424870-2cf39e23-0125-41ce-a9a3-e9b10677c9be.png)
 
